@@ -24,46 +24,79 @@
 <p class="sub">Une question, un bug, une suggestion ?</p>
 
 <a class="mail" href="mailto:bonjour@lucid-zen.com">bonjour@lucid-zen.com</a>
-<p>Nous répondons sous 48 heures ouvrées. Pour un bug, précisez votre modèle d'iPhone, votre version d'iOS et les étapes qui déclenchent le problème.</p>
+<p>Nous visons une réponse sous 2 jours ouvrés. Pour un bug, précisez votre modèle d'iPhone, votre version d'iOS et les étapes qui déclenchent le problème.</p>
 
 <h2>Questions fréquentes</h2>
 <div class="faq">
+  <p><span class="q">Lucid est-elle gratuite ?</span><br>
+  Oui, toutes les fonctionnalités sont gratuites, sans abonnement. Vous pouvez soutenir son développement par un achat intégré ponctuel et facultatif, géré par Apple. Ce soutien ne débloque aucune fonctionnalité.</p>
+
   <p><span class="q">Lucid voit-il quelles applications j'utilise ?</span><br>
-  Non. Votre sélection d'apps est gérée par iOS et transmise à Lucid sous forme de jetons opaques. Lucid ne peut pas savoir de quelles applications il s'agit, et cette information ne quitte jamais votre iPhone.</p>
+  iOS transmet votre sélection sous forme de jetons opaques, pas d'une liste de noms d'apps lisible par Lucid. Auto Block reçoit toutefois des événements de seuil d'usage et conserve un journal technique local pour estimer l'usage et les interruptions. Ce journal n'est pas envoyé automatiquement et ne contient pas de noms d'apps.</p>
 
   <p><span class="q">Mes données sont-elles envoyées quelque part ?</span><br>
-  Non. Lucid fonctionne entièrement hors ligne. Il n'y a ni compte, ni serveur, ni outil de mesure d'audience. Voir la <a href="privacy.html">politique de confidentialité</a>.</p>
+  Vos contenus et le journal Auto Block ne sont pas envoyés automatiquement à un serveur Lucid. Les fonctions principales utilisent le stockage local, sans compte ni mesure d'audience. Les achats facultatifs utilisent les services Apple et nécessitent une connexion. Si vous exportez des données ou écrivez au support, vous choisissez ce que vous partagez. Voir la <a href="privacy.html">politique de confidentialité</a>.</p>
 
   <p><span class="q">Pourquoi Lucid demande-t-il l'accès à Temps d'écran ?</span><br>
-  C'est la seule façon, sur iOS, de poser un écran de pause devant une application. L'autorisation est individuelle : elle s'applique à votre appareil et à vous seul.</p>
+  Lucid utilise les outils officiels Temps d'écran d'Apple pour mesurer des seuils d'usage et afficher un écran de pause sur les apps sélectionnées. L'autorisation est individuelle : elle s'applique à votre appareil et à vous seul.</p>
 
   <p><span class="q">Le blocage ne se déclenche pas.</span><br>
-  Vérifiez que Temps d'écran est actif dans Réglages iOS, et que l'autorisation Lucid n'a pas été révoquée (Réglages &rsaquo; Temps d'écran). Si l'autorisation a été retirée pendant une session, Lucid l'indique sur l'écran Blocs.</p>
+  Vérifiez que Lucid est autorisé dans Réglages iOS &rsaquo; Temps d'écran, qu'au moins une app est sélectionnée et que le bloc voulu est activé. Vérifiez aussi qu'un déblocage temporaire n'est pas en cours. Si le problème persiste, notez les horaires et le modèle d'iPhone ; vous pouvez choisir de joindre le journal Auto Block à un message au support.</p>
 
   <p><span class="q">Comment supprimer toutes mes données ?</span><br>
-  Dans l'app : Compte &rsaquo; Données et confidentialité &rsaquo; Effacer mes données. Cela lève les blocages en cours et supprime tout ce qui est stocké localement. Désinstaller l'app supprime également tout.</p>
+  Dans l'app : Réglages &rsaquo; Données et confidentialité &rsaquo; Effacer toutes mes données. Cela arrête les blocages et supprime les contenus, réglages et journaux locaux. Les fichiers déjà exportés, les sauvegardes Apple et les e-mails déjà envoyés au support ne sont pas supprimés par cette action. Si une programmation est en cours, attendez sa fin puis réessayez.</p>
 
-  <p><span class="q">Comment gérer un abonnement ?</span><br>
-  Les abonnements sont gérés par Apple : Réglages iOS &rsaquo; votre nom &rsaquo; Abonnements. Les demandes de remboursement passent par Apple, sur reportaproblem.apple.com.</p>
+  <p><span class="q">Comment fonctionne Auto Block ?</span><br>
+  Sur iOS 17.4 ou ultérieur, Auto Block additionne l'usage des apps sélectionnées. Par défaut, il vise 5 minutes d'usage puis 3 minutes de blocage, avant un nouveau cycle ; vous choisissez ces durées. Une pause naturelle estimée suffisamment longue permet aussi de repartir avec un nouveau quota. Lucid estime les interruptions à partir des événements de seuil envoyés par iOS : il ne voit pas exactement quand vous quittez chaque app et ne garantit pas une précision à la seconde. Des événements retardés ou manquants peuvent modifier le moment du blocage ou de sa levée. Si l'écran de blocage reste affiché après la pause, fermez puis rouvrez l'app concernée, ou ouvrez Lucid pour vérifier l'état du cycle.</p>
+
 </div>
 
 <hr>
 
+<section lang="en">
 <h1>Support — Lucid <span style="font-weight:400;color:#6b6b7c;font-size:.6em">(English)</span></h1>
-<p>Questions, bugs or feedback: <a href="mailto:bonjour@lucid-zen.com">bonjour@lucid-zen.com</a> — we reply within 2 business days. For bug reports, please include your iPhone model, iOS version and the steps to reproduce.</p>
+<p>Questions, bugs or feedback: <a href="mailto:bonjour@lucid-zen.com">bonjour@lucid-zen.com</a> — we aim to reply within 2 business days. For bug reports, please include your iPhone model, iOS version and the steps to reproduce.</p>
 <div class="faq">
+  <p><span class="q">Is Lucid free?</span><br>
+  Yes, all features are free, with no subscription. You can support development through an optional one-time in-app purchase handled by Apple. This does not unlock any features.</p>
   <p><span class="q">Does Lucid know which apps I use?</span><br>
-  No. Your selection is handled by iOS and passed to Lucid as opaque tokens. Lucid cannot identify the apps, and the information never leaves your iPhone.</p>
+  iOS provides your selection as opaque tokens, not a list of app names readable by Lucid. Auto Block does receive usage-threshold events and keeps a local diagnostic log to estimate usage and interruptions. This log is not sent automatically and contains no app names.</p>
   <p><span class="q">Is any data sent anywhere?</span><br>
-  No. Lucid works fully offline — no account, no server, no analytics. See the <a href="privacy-en.html">Privacy Policy</a>.</p>
+  Your content and Auto Block log are not automatically sent to a Lucid server. Core features use local storage, without an account or analytics. Optional purchases use Apple's services and require a connection. If you export data or email support, you choose what to share. See the <a href="privacy-en.html">Privacy Policy</a>.</p>
   <p><span class="q">Why does Lucid need Screen Time access?</span><br>
-  It is the only way on iOS to display a pause screen in front of an app. The authorization is individual and applies to your device only.</p>
+  Lucid uses Apple's official Screen Time tools to measure usage thresholds and display a pause screen on selected apps. The authorization is individual and applies to your device only.</p>
+  <p><span class="q">Blocking does not start.</span><br>
+  Check that Lucid is authorized in iOS Settings &rsaquo; Screen Time, that at least one app is selected and that the intended block is enabled. Also check that a temporary unblock is not active. If the issue persists, note the times and your iPhone model; you can choose to attach the Auto Block log to a support message.</p>
   <p><span class="q">How do I delete my data?</span><br>
-  In the app: Account &rsaquo; Data &amp; Privacy &rsaquo; Erase my data. Deleting the app also removes everything.</p>
-  <p><span class="q">How do I manage a subscription?</span><br>
-  Subscriptions are handled by Apple: iOS Settings &rsaquo; your name &rsaquo; Subscriptions. Refunds go through reportaproblem.apple.com.</p>
+  In the app: Settings &rsaquo; Data &amp; Privacy &rsaquo; Erase all my data. This stops blocks and deletes local content, settings and logs, but not files already exported, Apple backups or emails already sent to support. If scheduling is in progress, wait for it to finish and try again.</p>
+  <p><span class="q">How does Auto Block work?</span><br>
+  On iOS 17.4 or later, Auto Block combines usage across your selected apps. By default, it aims for 5 minutes of usage followed by a 3-minute block, then another cycle; you choose these durations. A natural break estimated to be long enough also allows a fresh allowance. Lucid estimates interruptions from iOS usage-threshold events: it cannot see exactly when you leave each app and does not guarantee second-by-second accuracy. Delayed or missing events may affect when a block starts or ends. If the blocking screen remains after the break, close and reopen the affected app, or open Lucid to check the cycle's status.</p>
 </div>
 
-<footer>© 2026 Guillaume Senderens, Entrepreneur Individuel (EI) — <a href="index.html">Documents légaux</a></footer>
+<hr>
+
+</section>
+<section lang="es">
+<h1>Soporte — Lucid <span style="font-weight:400;color:#6b6b7c;font-size:.6em">(Español)</span></h1>
+<p>Preguntas, errores o sugerencias: <a href="mailto:bonjour@lucid-zen.com">bonjour@lucid-zen.com</a>. Procuramos responder en un plazo de 2 días laborables. Para informar de un error, incluye el modelo de iPhone, la versión de iOS y los pasos para reproducirlo.</p>
+<div class="faq">
+  <p><span class="q">¿Lucid es gratuita?</span><br>
+  Sí, todas las funciones son gratuitas y no hay suscripción. Puedes apoyar su desarrollo mediante una compra integrada puntual y opcional gestionada por Apple. Este apoyo no desbloquea funciones.</p>
+  <p><span class="q">¿Lucid sabe qué apps utilizo?</span><br>
+  iOS proporciona tu selección mediante identificadores opacos, no como una lista de nombres de apps legible por Lucid. Auto Block sí recibe eventos de umbral de uso y guarda un registro técnico local para estimar el uso y las interrupciones. Este registro no se envía automáticamente ni contiene nombres de apps.</p>
+  <p><span class="q">¿Se envían mis datos a algún sitio?</span><br>
+  Tus contenidos y el registro de Auto Block no se envían automáticamente a un servidor de Lucid. Las funciones principales usan almacenamiento local, sin cuenta ni analítica. Las compras opcionales utilizan los servicios de Apple y requieren conexión. Si exportas datos o escribes al soporte, tú eliges qué compartir. Consulta la <a href="privacy-es.html">Política de privacidad</a>.</p>
+  <p><span class="q">¿Por qué necesita Lucid acceso a Tiempo de uso?</span><br>
+  Lucid utiliza las herramientas oficiales de Tiempo de uso de Apple para medir umbrales de uso y mostrar una pantalla de pausa en las apps elegidas. La autorización es individual y solo se aplica a tu dispositivo.</p>
+  <p><span class="q">El bloqueo no se activa.</span><br>
+  Comprueba que Lucid tiene autorización en Ajustes de iOS &rsaquo; Tiempo de uso, que has seleccionado al menos una app y que el bloqueo está activado. Comprueba también que no haya un desbloqueo temporal en curso. Si el problema persiste, anota los horarios y el modelo de iPhone; puedes adjuntar el registro de Auto Block a un mensaje al soporte si lo deseas.</p>
+  <p><span class="q">¿Cómo elimino mis datos?</span><br>
+  En la app: Ajustes &rsaquo; Datos y privacidad &rsaquo; Borrar todos mis datos. Esto detiene los bloqueos y elimina los contenidos, ajustes y registros locales, pero no los archivos ya exportados, las copias de seguridad de Apple ni los correos ya enviados al soporte. Si se está programando un recordatorio, espera a que termine y vuelve a intentarlo.</p>
+  <p><span class="q">¿Cómo funciona Auto Block?</span><br>
+  En iOS 17.4 o posterior, Auto Block suma el uso de las apps elegidas. Por defecto, busca alternar 5 minutos de uso y 3 minutos de bloqueo, antes de iniciar otro ciclo; tú eliges las duraciones. Una pausa natural estimada como suficientemente larga también permite reiniciar el límite. Lucid estima las interrupciones a partir de los eventos de umbral de iOS: no sabe exactamente cuándo sales de cada app ni garantiza precisión al segundo. Los eventos retrasados o ausentes pueden afectar al inicio o al final del bloqueo. Si la pantalla de bloqueo sigue visible tras la pausa, cierra y vuelve a abrir la app afectada, o abre Lucid para comprobar el estado del ciclo.</p>
+</div>
+
+</section>
+<footer>© 2026 Guillaume Senderens, Entrepreneur Individuel (EI) — <a href="index.html">Documents légaux · Legal documents · Documentos legales</a></footer>
 </body>
 </html>

@@ -16,52 +16,58 @@
 </style>
 </head>
 <body>
-<p class="lang"><a href="privacy-en.html">English version</a></p>
+<p class="lang"><a href="privacy-en.html">English</a> · <a href="privacy-es.html">Español</a></p>
 <h1>Politique de confidentialité — Lucid</h1>
-<p class="meta">Dernière mise à jour : 26 juillet 2026</p>
+<p class="meta">Dernière mise à jour : 14 octobre 2026</p>
 
-<div class="card"><strong>En résumé :</strong> Lucid fonctionne entièrement sur votre appareil. Nous ne collectons, ne stockons et ne transmettons aucune donnée personnelle sur nos serveurs — nous n'avons pas de serveurs. Pas de compte, pas de traceurs, pas de publicité.</div>
+<div class="card"><strong>En résumé :</strong> Vos notes, émotions, réglages et journaux Auto Block sont stockés sur votre appareil, sans envoi automatique à un serveur Lucid. Vous pouvez choisir d'exporter ou de partager des données. Pas de compte Lucid, pas de traceurs, pas de publicité. Les soutiens financiers facultatifs sont gérés par Apple. Si vous nous contactez par e-mail, nous recevons les informations que vous choisissez d'envoyer.</div>
 
 <h2>1. Qui sommes-nous</h2>
 <p>L'application Lucid (« l'Application ») est éditée par <strong>Guillaume Senderens, Entrepreneur Individuel (EI)</strong> (« nous »).<br>
 Contact : <a href="mailto:bonjour@lucid-zen.com">bonjour@lucid-zen.com</a></p>
 
 <h2>2. Données traitées et où elles se trouvent</h2>
-<p>Toutes les données créées dans l'Application sont stockées <strong>localement sur votre appareil</strong>, dans l'espace privé de l'Application (base SwiftData et préférences locales). Cela inclut :</p>
+<p>Vos données d'utilisation sont stockées <strong>localement sur votre appareil</strong>, dans l'espace privé de l'Application et dans un espace partagé uniquement avec ses extensions de blocage (base SwiftData, préférences et fichiers locaux). Cela inclut :</p>
 <ul>
   <li>vos tâches, notes et réponses d'introspection ;</li>
   <li>vos check-ins émotionnels (Boussole émotionnelle) ;</li>
   <li>vos résultats d'entraînement cognitif (Puzzle / Dual N-Back) ;</li>
-  <li>vos réglages de blocs de concentration et préférences.</li>
+  <li>vos réglages de blocs de concentration et préférences ;</li>
+  <li>l'état des blocages et le journal technique Auto Block décrit ci-dessous.</li>
 </ul>
-<p>Ces données ne quittent jamais votre appareil par notre fait. Nous n'y avons pas accès. Si vous utilisez la sauvegarde iCloud/iTunes de votre iPhone, elles peuvent être incluses dans vos sauvegardes Apple, régies par la politique de confidentialité d'Apple.</p>
+<p>Lucid ne transmet pas automatiquement ces données à un serveur de l'éditeur. Nous n'y avons pas accès à distance. Si vous choisissez de les exporter, de les partager ou de les envoyer au support, elles quittent l'espace de l'Application à votre initiative. Si vous utilisez une sauvegarde Apple de votre iPhone, elles peuvent y être incluses selon vos réglages et la politique de confidentialité d'Apple.</p>
 
 <h2>3. Temps d'écran (Screen Time / Family Controls)</h2>
-<p>Pour bloquer des applications, Lucid utilise les cadres officiels d'Apple (FamilyControls, ManagedSettings, DeviceActivity), avec votre autorisation explicite. Par conception d'Apple, la sélection des applications à bloquer est traitée par le système sous forme de jetons opaques : <strong>Lucid n'a pas accès à la liste de vos applications ni à votre historique d'utilisation</strong>, et ces informations ne sont transmises à personne.</p>
+<p>Pour bloquer des applications, Lucid utilise les cadres officiels d'Apple (FamilyControls, ManagedSettings, DeviceActivity), avec votre autorisation explicite. La sélection est conservée sous forme de jetons opaques fournis par iOS : Lucid ne récupère pas une liste en clair des noms ou identifiants des apps sélectionnées. En revanche, <strong>Lucid reçoit des événements de seuil d'usage</strong> pour cette sélection et traite localement leur horaire afin d'estimer l'usage et les interruptions. Il ne s'agit pas d'un historique détaillé de vos ouvertures et fermetures d'apps.</p>
+<p>Le journal Auto Block sert à comprendre et à diagnostiquer les blocages. Il contient notamment les horaires de réception, les seuils et intervalles, les durées choisies, les estimations d'usage et d'inactivité, les identifiants de cycle et les résultats du traitement. Il ne contient ni noms d'apps, ni jetons de sélection, ni adresses web, ni notes ou émotions. Il est limité à 2 000 lignes ; les lignes de plus de sept jours sont supprimées à la prochaine lecture ou mise à jour du journal, et non par un effacement programmé à heure fixe.</p>
+<p>Vous pouvez effacer le journal depuis son écran et l'exporter en CSV par une action explicite. Aucun envoi au support n'est automatique : vous choisissez où enregistrer ou avec qui partager le fichier. Une copie exportée peut contenir des horaires révélateurs de vos habitudes ; ne la partagez qu'avec un destinataire de confiance. Les copies déjà exportées ne sont pas supprimées lorsque vous effacez les données de Lucid.</p>
 
-<h2>4. Achats et abonnements</h2>
-<p>Les abonnements et achats intégrés sont traités exclusivement par Apple via l'App Store. Nous ne recevons ni ne stockons aucune donnée de paiement (carte bancaire, identité de facturation). La vérification de votre abonnement s'effectue sur l'appareil via StoreKit.</p>
+<h2>4. Accès gratuit</h2>
+<p>Toutes les fonctionnalités de Lucid sont gratuites. Des achats intégrés consommables permettent de soutenir volontairement son développement, ponctuellement et sans abonnement. Ils ne débloquent aucune fonctionnalité. Apple gère le paiement et les données associées selon sa politique de confidentialité. Lucid vérifie les transactions sur l’appareil et ne reçoit pas vos coordonnées bancaires ; aucun historique d’achat n’est envoyé à un serveur Lucid.</p>
 
 <h2>5. Notifications</h2>
-<p>Les rappels et alarmes utilisent les notifications locales d'iOS. Elles sont programmées et déclenchées sur votre appareil uniquement, avec votre autorisation.</p>
+<p>Les rappels utilisent les notifications locales d'iOS avec votre autorisation. À partir d'iOS 26, les alarmes utilisent AlarmKit et une autorisation distincte ; sur les versions antérieures, elles reposent sur les notifications locales et leurs limites (mode Silence et Concentration notamment). Leur programmation ne nécessite pas l'envoi de vos notes ou émotions à un serveur.</p>
 
 <h2>6. Ce que nous ne faisons pas</h2>
 <ul>
-  <li>Pas de compte utilisateur, pas de collecte d'e-mail.</li>
+  <li>Pas de compte utilisateur, pas de collecte automatique d'e-mail.</li>
   <li>Pas d'outils d'analyse (analytics), pas de traceurs, pas de SDK publicitaire.</li>
-  <li>Pas de vente ni de partage de données — nous n'en détenons aucune.</li>
+  <li>Pas de vente de vos données ni d'utilisation publicitaire. Nous n'avons pas accès au contenu local de l'App ; nous recevons les informations que vous envoyez volontairement au support, comme décrit ci-dessous.</li>
 </ul>
 
-<h2>7. Base légale (RGPD)</h2>
-<p>Dans la mesure où un traitement local de données a lieu, il repose sur l'exécution du contrat (art. 6.1.b RGPD : fournir les fonctionnalités que vous utilisez) et, pour les autorisations système (Temps d'écran, notifications), sur votre consentement, révocable à tout moment dans les Réglages iOS.</p>
+<h2>7. Contact volontaire</h2>
+<p>Si vous contactez le support par e-mail, nous recevons votre adresse, votre message et les informations techniques que vous choisissez d'envoyer. Le formulaire peut pré-remplir la version et le numéro de build de Lucid, la version iOS et le type d'appareil. Vous pouvez relire, modifier ou supprimer ces informations avant l'envoi. Elles servent uniquement à vous répondre et à résoudre votre demande, puis sont conservées le temps nécessaire au suivi et à nos obligations légales.</p>
 
-<h2>8. Vos droits</h2>
-<p>Vos données étant stockées uniquement sur votre appareil, vous les contrôlez directement : vous pouvez les consulter et les supprimer dans l'Application, et <strong>supprimer l'Application efface l'ensemble des données</strong> qu'elle a créées. Pour toute question relative au RGPD (accès, rectification, effacement, opposition), contactez-nous à l'adresse ci-dessus. Vous pouvez aussi saisir la CNIL (cnil.fr).</p>
+<h2>8. Base légale (RGPD)</h2>
+<p>Le traitement local nécessaire aux fonctionnalités repose sur l'exécution du contrat (art. 6.1.b RGPD). Les autorisations système (Temps d'écran, notifications) reposent sur votre consentement, révocable à tout moment dans les Réglages iOS. Le traitement d'un e-mail de support repose sur notre intérêt légitime à répondre à votre demande.</p>
 
-<h2>9. Mineurs</h2>
-<p>L'Application n'est pas destinée aux enfants de moins de 13 ans et ne collecte aucune donnée personnelle, y compris pour les mineurs.</p>
+<h2>9. Vos droits</h2>
+<p>Vous pouvez consulter vos données locales et utiliser « Effacer mes données » dans l'Application pour supprimer les contenus et réglages locaux et arrêter les blocages. Cette action ne supprime pas d'éventuelles sauvegardes Apple ni les échanges déjà envoyés au support. Les sauvegardes se gèrent dans les services Apple concernés ; décharger l'App n'est pas la même chose que supprimer ses données. Pour exercer vos droits sur un échange de support (accès, rectification, effacement, opposition), contactez-nous à l'adresse ci-dessus. Vous pouvez aussi saisir la CNIL (cnil.fr).</p>
 
-<h2>10. Modifications</h2>
+<h2>10. Mineurs</h2>
+<p>L'Application n'est pas destinée aux enfants de moins de 13 ans. Elle n'envoie pas automatiquement vos données d'utilisation à un serveur Lucid.</p>
+
+<h2>11. Modifications</h2>
 <p>Nous pouvons mettre à jour cette politique. La version en vigueur est publiée sur cette page avec sa date de mise à jour. En cas de changement matériel (par exemple l'introduction d'un service en ligne), l'Application vous en informera.</p>
 
 <footer>© 2026 Guillaume Senderens, Entrepreneur Individuel (EI) — Lucid. <a href="eula.html">Conditions d'utilisation</a> · <a href="index.html">Accueil</a></footer>

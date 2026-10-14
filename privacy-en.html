@@ -16,52 +16,58 @@
 </style>
 </head>
 <body>
-<p class="lang"><a href="privacy.html">Version française</a></p>
+<p class="lang"><a href="privacy.html">Français</a> · <a href="privacy-es.html">Español</a></p>
 <h1>Privacy Policy — Lucid</h1>
-<p class="meta">Last updated: July 26, 2026</p>
+<p class="meta">Last updated: October 14, 2026</p>
 
-<div class="card"><strong>In short:</strong> Lucid runs entirely on your device. We do not collect, store, or transmit any personal data to our servers — we have no servers. No account, no trackers, no ads.</div>
+<div class="card"><strong>In short:</strong> Your notes, emotions, settings and Auto Block logs are stored on your device, with no automatic transmission to a Lucid server. You can choose to export or share data. No Lucid account, no trackers, no ads. Apple handles optional financial support. If you email us, we receive the information you choose to send.</div>
 
 <h2>1. Who we are</h2>
 <p>The Lucid application (the “App”) is published by <strong>Guillaume Senderens, Entrepreneur Individuel (EI, France)</strong> (“we”).<br>
 Contact: <a href="mailto:bonjour@lucid-zen.com">bonjour@lucid-zen.com</a></p>
 
 <h2>2. Data processed and where it lives</h2>
-<p>All data created in the App is stored <strong>locally on your device</strong>, in the App's private storage (SwiftData database and local preferences). This includes:</p>
+<p>Your usage data is stored <strong>locally on your device</strong>, in the App's private storage and a storage area shared only with its blocking extensions (SwiftData database, preferences and local files). This includes:</p>
 <ul>
   <li>your tasks, notes and introspection answers;</li>
   <li>your emotional check-ins (Emotional Compass);</li>
   <li>your cognitive training results (Puzzle / Dual N-Back);</li>
-  <li>your focus-block settings and preferences.</li>
+  <li>your focus-block settings and preferences;</li>
+  <li>blocking state and the Auto Block diagnostic log described below.</li>
 </ul>
-<p>This data never leaves your device through us, and we have no access to it. If you use your iPhone's iCloud/iTunes backup, it may be included in your Apple backups, which are governed by Apple's privacy policy.</p>
+<p>Lucid does not automatically transmit this data to a server run by the publisher. We cannot access it remotely. If you choose to export, share or send it to support, it leaves the App's storage at your initiative. If you use an Apple backup of your iPhone, it may include this data depending on your settings and Apple's privacy policy.</p>
 
 <h2>3. Screen Time (Family Controls)</h2>
-<p>To block apps, Lucid uses Apple's official frameworks (FamilyControls, ManagedSettings, DeviceActivity), with your explicit authorization. By Apple's design, your selection of apps to block is handled by the system as opaque tokens: <strong>Lucid cannot see the list of your apps or your usage history</strong>, and this information is not transmitted to anyone.</p>
+<p>To block apps, Lucid uses Apple's official frameworks (FamilyControls, ManagedSettings, DeviceActivity), with your explicit authorization. Your selection is stored as opaque tokens provided by iOS: Lucid does not retrieve a readable list of the selected apps' names or identifiers. However, <strong>Lucid receives usage-threshold events</strong> for this selection and processes their timing locally to estimate usage and interruptions. This is not a detailed history of when you open and close apps.</p>
+<p>The Auto Block log helps explain and diagnose blocking behavior. It includes receipt timestamps, thresholds and intervals, chosen durations, estimated usage and inactivity, cycle identifiers and processing outcomes. It contains no app names, selection tokens, web addresses, notes or emotions. It is capped at 2,000 rows; rows older than seven days are deleted when the log is next read or updated, not by a scheduled deletion at a fixed time.</p>
+<p>You can clear the log from its screen and explicitly export it as a CSV file. Nothing is automatically sent to support: you choose where to save the file or whom to share it with. An exported copy may contain timestamps that reveal usage habits; share it only with a trusted recipient. Copies already exported are not deleted when you erase Lucid's data.</p>
 
-<h2>4. Purchases and subscriptions</h2>
-<p>Subscriptions and in-app purchases are processed exclusively by Apple through the App Store. We never receive or store any payment data (card details, billing identity). Subscription status is verified on-device via StoreKit.</p>
+<h2>4. Free access</h2>
+<p>All Lucid features are free. Optional consumable in-app purchases let you support its development with a one-time payment, without a subscription or feature unlock. Apple handles payment and related data under its privacy policy. Lucid verifies transactions on the device and does not receive your banking details; no purchase history is sent to a Lucid server.</p>
 
 <h2>5. Notifications</h2>
-<p>Reminders and alarms use iOS local notifications. They are scheduled and triggered on your device only, with your permission.</p>
+<p>Reminders use iOS local notifications with your permission. On iOS 26 and later, alarms use AlarmKit and a separate permission; on earlier versions, they rely on local notifications and their limitations, including Silent mode and Focus. Scheduling them does not require sending your notes or emotions to a server.</p>
 
 <h2>6. What we do not do</h2>
 <ul>
-  <li>No user accounts, no email collection.</li>
+  <li>No user accounts and no automatic email collection.</li>
   <li>No analytics tools, no trackers, no advertising SDKs.</li>
-  <li>No selling or sharing of data — we hold none.</li>
+  <li>No sale of your data or advertising use. We cannot access the App's local content; we receive information you voluntarily send to support, as described below.</li>
 </ul>
 
-<h2>7. Legal basis (GDPR)</h2>
-<p>To the extent any local data processing occurs, it is based on the performance of a contract (Art. 6(1)(b) GDPR: providing the features you use) and, for system permissions (Screen Time, notifications), on your consent, which you can revoke at any time in iOS Settings.</p>
+<h2>7. Voluntary contact</h2>
+<p>If you email support, we receive your address, your message and the technical information you choose to send. The form may prefill the Lucid version and build number, iOS version and device type. You can review, edit or remove this information before sending. We use it only to respond and resolve your request, and retain it only as long as needed for follow-up and legal obligations.</p>
 
-<h2>8. Your rights</h2>
-<p>Since your data is stored only on your device, you control it directly: you can view and delete it in the App, and <strong>deleting the App erases all data</strong> it created. For any GDPR request (access, rectification, erasure, objection), contact us at the address above. You may also lodge a complaint with your supervisory authority (in France, the CNIL — cnil.fr).</p>
+<h2>8. Legal basis (GDPR)</h2>
+<p>Local processing required for App features is based on performance of a contract (Art. 6(1)(b) GDPR). System permissions (Screen Time and notifications) rely on your consent, which you can revoke in iOS Settings. Processing a support email relies on our legitimate interest in responding to your request.</p>
 
-<h2>9. Children</h2>
-<p>The App is not directed at children under 13 and collects no personal data, including from minors.</p>
+<h2>9. Your rights</h2>
+<p>You can view your local data and use “Erase my data” in the App to delete local content and settings and stop blocks. This does not delete any Apple backups or messages already sent to support. Manage backups through the relevant Apple services; offloading the App is not the same as deleting its data. To exercise your rights regarding a support exchange (access, rectification, erasure or objection), contact us at the address above. You may also lodge a complaint with your supervisory authority (in France, the CNIL — cnil.fr).</p>
 
-<h2>10. Changes</h2>
+<h2>10. Children</h2>
+<p>The App is not directed at children under 13. It does not automatically send your usage data to a Lucid server.</p>
+
+<h2>11. Changes</h2>
 <p>We may update this policy. The current version is published on this page with its update date. In case of a material change (for example, the introduction of an online service), the App will inform you.</p>
 
 <footer>© 2026 Guillaume Senderens, Entrepreneur Individuel (EI, France) — Lucid. <a href="eula-en.html">Terms of Use</a> · <a href="index.html">Home</a></footer>
